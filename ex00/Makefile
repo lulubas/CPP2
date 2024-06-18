@@ -6,7 +6,7 @@
 #    By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/27 17:07:24 by lbastien          #+#    #+#              #
-#    Updated: 2024/06/17 18:06:57 by lbastien         ###   ########.fr        #
+#    Updated: 2024/06/17 18:10:08 by lbastien         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 TARGET = fixed
 
 # Source, Object, Dependency files
-SRC = main.cpp Harl.cpp
+SRC = main.cpp fixed.cpp
 OBJ = $(SRC:.cpp=.o)
 DEP = $(OBJ:.o=.d)
 
