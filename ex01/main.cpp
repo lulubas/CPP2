@@ -1,6 +1,11 @@
 #include <iostream>
 #include "Fixed.hpp"
 int main( void ) {
+
+    std::cout << "==============" << std::endl;
+    std::cout << "SUBJECT TESTS" << std::endl;
+    std::cout << "==============" << std::endl;
+
     Fixed a;
     Fixed const b( 10 );
     Fixed const c( 42.42f );

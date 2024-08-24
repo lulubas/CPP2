@@ -6,7 +6,7 @@
 /*   By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 13:11:07 by lbastien          #+#    #+#             */
-/*   Updated: 2024/08/23 12:34:30 by lbastien         ###   ########.fr       */
+/*   Updated: 2024/08/24 16:42:00 by lbastien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,7 @@ class Fixed {
         bool operator<=( const Fixed &other) const;
         bool operator==( const Fixed &other) const;
         bool operator!=( const Fixed &other) const;
-        
-        friend std::ostream& operator<<( std::ostream& stream, const Fixed& other );
-        
+                
        ~Fixed();
         
         static  Fixed& min( Fixed& a, Fixed& b );
@@ -62,5 +60,7 @@ class Fixed {
         void                _setRawbits( int const raw );
 
 };
+
+std::ostream& operator<<( std::ostream& stream, const Fixed& other );
 
 #endif

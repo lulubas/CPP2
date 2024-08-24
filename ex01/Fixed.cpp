@@ -6,7 +6,7 @@
 /*   By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 12:58:59 by lbastien          #+#    #+#             */
-/*   Updated: 2024/08/23 12:15:40 by lbastien         ###   ########.fr       */
+/*   Updated: 2024/08/24 16:33:12 by lbastien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,15 +44,15 @@ Fixed &Fixed::operator=( const Fixed &other ) {
     return *this;
 }
 
-//Operators overload
-std::ostream& operator<<( std::ostream& stream, const Fixed& other ) {
-    stream << other.toFloat();
-    return stream;
-}
-
 //Destructor
 Fixed::~Fixed() {
     std::cout << "Destructor called" << std::endl;
+}
+
+//Operators overload
+std::ostream& operator<<(std::ostream& stream, const Fixed& other) {
+    stream << other.toFloat();
+    return stream;
 }
 
 //Member functions

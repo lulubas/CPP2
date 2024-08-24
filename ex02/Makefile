@@ -6,12 +6,12 @@
 #    By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/27 17:07:24 by lbastien          #+#    #+#              #
-#    Updated: 2024/06/19 14:41:56 by lbastien         ###   ########.fr        #
+#    Updated: 2024/08/24 15:40:49 by lbastien         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Compiler settings
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 # Target executable name
@@ -34,7 +34,7 @@ run: all
 	$(CXX) $(CXXFLAGS) -MMD -MP -c $< -o $@
 
 # Link object files into the target executable
-$(TARGET): $(OBJ)
+$(TARGET): $(OBJ) Makefile
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(TARGET)
 
 # Clean up objects and dependency files

@@ -6,19 +6,19 @@
 #    By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/27 17:07:24 by lbastien          #+#    #+#              #
-#    Updated: 2024/06/21 17:19:33 by lbastien         ###   ########.fr        #
+#    Updated: 2024/08/24 18:13:19 by lbastien         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Compiler settings
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
 
 # Target executable name
 TARGET = bsp
 
 # Source, Object, Dependency files
-SRC = main.cpp Fixed.cpp Point.cpp	
+SRC = main.cpp Fixed.cpp Point.cpp bsp.cpp
 OBJ = $(SRC:.cpp=.o)
 DEP = $(OBJ:.o=.d)
 
@@ -34,7 +34,7 @@ run: all
 	$(CXX) $(CXXFLAGS) -MMD -MP -c $< -o $@
 
 # Link object files into the target executable
-$(TARGET): $(OBJ)
+$(TARGET): $(OBJ) Makefile
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(TARGET)
 
 # Clean up objects and dependency files
