@@ -6,7 +6,7 @@
 /*   By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 17:19:47 by lbastien          #+#    #+#             */
-/*   Updated: 2024/08/24 18:09:11 by lbastien         ###   ########.fr       */
+/*   Updated: 2024/08/27 16:07:40 by lbastien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Point::Point() {}
 
-Point::Point( const int x, const int y ) : _x( x ), _y( y ) {}
+Point::Point( const float x, const float y ) : _x( x ), _y( y ) {}
 
 Point::Point( const Point &other ) : _x( other._x), _y( other._y ) {}
 

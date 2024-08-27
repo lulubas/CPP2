@@ -6,7 +6,7 @@
 /*   By: lbastien <lbastien@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 17:20:02 by lbastien          #+#    #+#             */
-/*   Updated: 2024/08/24 18:14:10 by lbastien         ###   ########.fr       */
+/*   Updated: 2024/08/27 16:10:48 by lbastien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Point {
     public:
         Point();
-        Point(const int x, const int y );
+        Point(const float x, const float y );
         Point( const Point& other );
         Point& operator=( const Point &other );
         ~Point();
