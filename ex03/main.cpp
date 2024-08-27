@@ -15,7 +15,7 @@ int main( void ) {
     std::cout << "CREATING P1 & P2" << std::endl;
     std::cout << "==============" << std::endl;
 
-    Point P1(2, 2);
+    Point P1(2.2f, 2.2f);
     Point P2(2, -1);
 
     std::cout << "==============" << std::endl;
